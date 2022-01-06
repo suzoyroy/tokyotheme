@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+
+.le {
+    width: 25%;
+    position: fixed;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.le .ab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ab .left {
+    margin-bottom: 45px;
+}
+
+.le .ab .left>img {
+    color: white;
+    background-color: white;
+    width: 150px;
+    margin-bottom: 25px;
+    filter: invert(1);
+    
+}
+
+.ab .left p {
+    margin: 20px 0;   
+}
+
+.ab .left p>a {
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.ab .left p:hover a, .ab .left .icon>p:first-child a {
+    letter-spacing: 1.2px;
+    color: rgb(255, 255, 255);
+}
+
+.ab .left p>img {
+    height: 15px;
+    width: 15px;
+    color: white;
+    filter: invert(1);
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.ab span {
+    color: white;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+
+
+/* right section start */
+
+.right {
+    width: 75%;
+    height: 100vh;
+    margin-left: 25%;
+    position: relative;
+    background-color: #111111;
+}
+
+.right .cd {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 100%;
+    display: flex;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+
+.right .cd .right1 {
+    margin-left: 50px;
+    flex: 1;
+}
+
+.right .cd .right2 {
+    margin-left: 40px;
+    flex: 1;
+}
+
+.right .cd .right1>img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+
+.cd .right2 div img {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cd .right2 div img:hover {
+    transform: translateY(-5px);
+}
+
+.right .cd .right2 h1{
+    font-size: 60px;
+    color: white;
+    line-height: 100px;
+}
+
+.right .cd .right2 h2{
+    color: white;
+    caret-color: red;
+    margin-bottom: 20px;
+}
+
+.right .cd .right2 p {
+    color: rgb(177, 177, 177);
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 35px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1400px) {
+    .right .cd {
+        padding: 20px;
+    }
+
+    .right .cd .right1 {
+        margin-left: 20px;
+    }
+
+    .right .cd .right2 {
+        margin-left: 0px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 1100px) {
+    
+    .le {
+        width: 100%;
+        position: static;
+        height: 70px;
+        background-color: #000000;
+    }
+
+    .le .ab {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+    }
+
+    .ab .left {
+        margin-bottom: 0px;
+    }
+
+    .le .ab .left>img {
+        width: 150px;
+        margin: 25px;   
+    }
+
+    .ab .left p {
+        margin: 25px 10px;
+        float: left;  
+        cursor: pointer;
+    }
+
+    .ab .left .icon{
+        float: right;
+        margin-right: 100px;
+    }
+
+    .ab .left p>a {
+        display: none;
+    }
+
+    .ab .left p>img:hover {
+        opacity: 1;
+    }
+
+    .ab span {
+       display: none;
+    }
+
+    .right {
+        width: 100%;
+        /* overflow: hidden; */
+        margin-left: 0;
+    }
+
+    .right .cd {
+        padding: 100px;
+    }
+    
+    
+  }
+
+  @media screen and (max-width: 940px) {
+
+    .le .ab .left>img {
+        width: 120px;
+        margin: 25px 10px;   
+    }
+
+    .ab .left .icon{
+        margin-right: 20px;
+    }
+
+    .ab .left p {
+        margin: 25px 5px;
+        float: left;  
+        cursor: pointer;
+    }
+
+    .right {
+        width: 100%;
+        margin-left: 0;
+        height: 100%;
+        position: static;
+        text-align: center;
+        padding: 50px 0;
+
+    }
+
+    .right .cd {
+        position: static;
+        top: 0;
+        right: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    .right .cd .right1 {
+        margin-left: 0px;
+        margin-top: 20px;
+        flex: 0;
+    }
+
+    .right .cd .right2 {
+        margin-left: 0px;
+        flex: 0;
+        display: block;
+    }
+
+    .right .cd .right1>img {
+        margin-right: 0px;
+    }
+
+    .right .cd .right2 h1{
+        margin-top: 50px;
+        line-height: normal;
+        font-size: 36px;
+    } 
+
+    .right .cd .right2 p {
+        color: rgb(177, 177, 177);
+        line-height: normal;
+        font-size: 16px;
+        margin: 15px;
+    }
+
+  }
